@@ -1,0 +1,10 @@
+<plugin>
+    <name>Export Label Track to SRT</name>
+    <version>1.0.0</version>
+    <creator>Your Name</creator>
+    <description>Exports label tracks to SRT files.</description>
+    <target>
+        <type>analyze</type>
+        <command>ProcessLabels</command>
+    </target>
+</plugin>

@@ -1,0 +1,23 @@
+name: Build
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up CMake
+      uses: lukka/get-cmake@v3
+      with:
+        cmakeVersion: '3.18.4'
+    - name: Configure
+      run: cmake -Bbuild -H.
+    - name: Build
+      run: cmake --build build --config Release
+    - name: Archive build
+      uses: actions/upload-artifact@v2
+      with:
+        name: ExportLabelsPlugin
+        path: build/
