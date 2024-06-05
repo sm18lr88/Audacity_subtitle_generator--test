@@ -7,11 +7,11 @@ jobs:
     runs-on: windows-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - name: Set up CMake
-      uses: lukka/get-cmake@v3
+      uses: lukka/get-cmake@latest
       with:
-        cmakeVersion: '3.18.4'
+        cmakeVersion: 'latest'
     - name: Configure
       run: cmake -Bbuild -H.
     - name: Build
