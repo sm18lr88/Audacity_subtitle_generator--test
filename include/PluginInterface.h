@@ -9,6 +9,7 @@
 
 extern "C" {
     EXPORT const char* GetPluginName();
+    EXPORT const char* GetPluginVersion();
     EXPORT void ProcessLabels(const char* labelsFilePath, const char* outputFilePath);
 }
 
