@@ -1,5 +1,7 @@
 # Export Labels Plugin for Audacity
 
+Undergoing testing. Don't do anything yet.  
+
 This plugin exports label tracks to SRT files, supporting UTF-8 characters.
 
 ## Build Instructions
